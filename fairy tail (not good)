@@ -1,0 +1,63 @@
+#fairy tail main theme
+#dylan colwell
+#it's okay not good but beaerable
+use_synth :piano
+use_bpm 110
+
+3.times do
+  play :d5
+  play :d3
+  play :e2
+  sleep 0.4
+  play :e5
+  sleep 0.4
+  play :d5
+  sleep 0.4
+  play :c5
+  sleep 0.4
+  play :a4
+  sleep 0.4
+  play :g4
+  sleep 0.4
+  play :a4
+  sleep 0.4
+  play :c5
+  sleep 0.4
+  play :d5
+  play :d3
+  play :e2
+  sleep 0.4
+  play :c5
+  sleep 0.4
+end
+live_loop :should_be_better do
+  play :d5
+  play :d3
+  play :e2
+  sleep 0.4
+  play :e5
+  sleep 0.4
+  play :d5
+  sleep 0.4
+  play :c5
+  sleep 0.4
+  play :a4
+  sleep 0.4
+  play :g4
+  sleep 0.4
+  play :a4
+  sleep 0.4
+  play :c5
+  sleep 0.4
+  play :d5
+  play :d3
+  play :e2
+  sleep 0.4
+  play :c5
+  sleep 0.4
+end
+
+live_loop :drums do
+  sample :loop_amen, beat_stretch: 2, rate: 0.5, amp: rrand(2, 3)
+  sleep 2
+end
