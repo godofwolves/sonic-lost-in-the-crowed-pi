@@ -104,8 +104,13 @@ live_loop :Aroving do
   end
   R = dice(4)
   print R
-  A = A + R/3
+  A = (A + R)/2
   print A
 end
+live_loop :show do
+  print A
+  sleep rs
+end
+
 
 # I DID IT HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA
